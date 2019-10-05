@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block body %}
+{% include "navbar.html" %}
+<section class="hero is-primary is-bold is-large">
+  <div class="hero-body">
+  <p class="title is-2">Welcome to our Payment Page</p>
+  <p class="subtitle is-5">Please press the button below if you would like to process your x-ray image</p>
+  {# THIS IS A TEST KEY. TO FIND YOUR OWN KEY, LOG IN TO YOUR STRIPE ACCOUNT
+    THEN GO TO: https://stripe.com/docs/quickstart #}
+    <form action="{{url_for('payment')}}" method="POST">
+      <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" 
+      data-key={{public_key}} 
+      data-amount="0200" 
+      data-name="Pneumonia Prediction" 
+      data-description="Pay for 1 Chest X-ray Prediction"
+      data-image="..\static\img\xray.jpeg"
+      data-locale="auto">
+        </script>
+      </form>
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="../static/js/scripts.js"></script>
+
+{% endblock %}

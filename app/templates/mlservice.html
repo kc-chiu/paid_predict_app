@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block body %}
+{% include "navbar.html" %}
+<link rel="stylesheet" href="../static/css/main.css">
+
+<section class="hero is-primary is-bold is-large">
+  
+  <p class="title is-5">Press the button below to choose the x-ray image on your local computer</p>
+  <p class="subtitle is-6">You may choose another image before pressing the "predict" button</p>
+  <div>
+    <form id="upload-file" method="post" enctype="multipart/form-data">
+      <label for="imageUpload" class="upload-label">
+        Choose...
+      </label>
+      <input type="file" name="image" id="imageUpload" accept=".png, .jpg, .jpeg">
+    </form>
+    
+    <div class="image-section" style="display:none;">
+        <div class="img-preview">
+          <div id="imagePreview">
+          </div>
+        </div>
+        <div>
+          <button class="button is-danger is-medium" id="btn-predict">Predict!</button>
+        </div>
+      </div>
+      
+      <div class="loader" style="display:none;"></div>
+    
+      <p class="title is-4" id="result">
+        <span> </span>
+      </p>
+    </div>
+    <div>
+      <a href="{{url_for('login')}}" class="button is-link is-medium" id="btn-nextpay" style="display: none">Predict More</a>
+    </div>
+  <div class="hero-body">
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="../static/js/main.js"></script>
+
+{% endblock %}

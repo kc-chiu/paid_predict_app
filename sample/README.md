@@ -1,0 +1,1 @@
+Sample x-ray images for trying the app.
