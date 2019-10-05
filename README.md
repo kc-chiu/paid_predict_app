@@ -28,7 +28,7 @@ Midterm Assignment (Build an AI Startup) of [Make Money with Machine Learning co
 ## References
 1. [Flaskex for user sign-up and log-in](https://github.com/anfederico/Flaskex)
 2. [Stripe payment](https://github.com/bprakashx7/stripe_payments)
-3. [Image Classification App](https://github.com/mtobeiyf/keras-flask-deploy-webapp)
+3. [Image Classifier App](https://github.com/mtobeiyf/keras-flask-deploy-webapp)
 
 ------------------
 
