@@ -10,7 +10,7 @@ Midterm Assignment (Build an AI Startup) of [Make Money with Machine Learning co
 - Python Modules listed in [requirements.txt](https://github.com/kc-chiu/paid_predict_app/blob/master/app/requirements.txt)
 
 ------------------
-a
+
 ## Trying the app
 
 - All app codes are in [app](https://github.com/kc-chiu/paid_predict_app/tree/master/app) folder
